@@ -34,7 +34,7 @@ export default function Login2(){
     return(
         <div className="login-page">
         
-        <h1>Generate Encrypted Data</h1>
+        <h1>Read Data</h1>
         <div className='login-container'>
             <input type="text" value={credentials.username} onChange={handleClick} name="username"  placeholder="Username" className="login-input" />
             <input type={credentials.password} onChange={handleClick} name="password" placeholder="Password" className="login-input" />

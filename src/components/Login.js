@@ -15,8 +15,9 @@ export default function Login(){
 
     function handleSubmit(e){
         e.preventDefault();
+        let person = ''
         for (let index = 0; index < 5; index++) {
-            let person = Object.keys(idPwd['id'][index])[0];
+            person = Object.keys(idPwd['id'][index])[0];
             if(credentials.username == person){
                 for(let indexing = 0; indexing < 5; indexing++){
                     var encrypt = new JSEncrypt();
@@ -28,6 +29,13 @@ export default function Login(){
                 }
             }else continue; 
         }
+        const checkLocalStorage = function(id){
+            var checker = localStorage.getItem(id);
+            if(checker.length>0){
+                return "Uploaded"
+            }else {return "Not Found"};
+        }
+        alert(`UserID of Upload: ${person}\nUploaded Data: ${credentials.password}\nPublic Key of Uploader: ${pubKeys[person]}\nUploaded Data of 0: ${checkLocalStorage(0)}\nUploaded Data of 1: ${checkLocalStorage(1)}\nUploaded Data of 2: ${checkLocalStorage(2)}\nUploaded Data of 3: ${checkLocalStorage(3)}\nUploaded Data of 4: ${checkLocalStorage(4)}`)
     }
 
     return(
