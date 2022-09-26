@@ -1,22 +1,9 @@
+body{
+    background: linear-gradient(101.67deg, #000000 0%, #0A001C 100%);
+}
 .login-page{
     background: linear-gradient(101.67deg, #000000 0%, #0A001C 100%);
-    padding-bottom: 6rem;
     /* height: 100%; */
-}
-.loginNav{
-    padding: 0 326px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-    position: relative;
-    z-index: 2;
-}
-.loginNav-logo{
-   /* width: 150px;
-   height: 125px; */
-   width: 18%;
-   transform: rotate(-0.78deg);
 }
 .navigation-link{
     position: relative;
@@ -36,47 +23,6 @@ color: #FFFFFF;
 }
 .selected{
     font-weight: 600;
-}
-.loginNav-logo-txt{
-   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-padding-left: 0px;
-line-height: 61px;
-letter-spacing: 0.2em;
-color: #ffffff;
-white-space: nowrap;
-text-align: left;
-position: relative;
-right: 160px;
-bottom: 7px;
-transform: rotate(0.38deg);
-}
-.loginNav-about{
-   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 29px;
-letter-spacing: 0.2em;
-
-color: #ffffff;
-text-decoration: none;
-margin-left: 200px;
-}
-.loginNav-contact{
-   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 29px;
-letter-spacing: 0.2em;
-margin-left: 50px;
-color: #ffffff;
-text-decoration: none;
-text-align: center;
-white-space: nowrap;
 }
 .loginNav-login{
     background: linear-gradient(94.12deg, #6D2ADA 17.67%, #2D2BA4 68.68%);
@@ -179,17 +125,6 @@ cursor: pointer;
 .login-btn:hover{
     box-shadow: 2.5px 0px 10px 6px rgba(200, 151, 250, 0.52);
 }
-.icon{
-        color: white;
-        position: absolute;
-        top: 57%;
-        right: 18%;
-    cursor: pointer;
-}
-.icon:hover {
-    color:#5c65cb;
-    cursor: pointer;
-  }
 
 ::placeholder {
     
